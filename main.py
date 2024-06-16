@@ -11,17 +11,15 @@ def draw_heap_on_grid(heap):
 
     # Now let's create and fill the grid with empty cells
     # grid: grid_height x grid_width 
-    grid = []
-    row = [' '] * grid_width 
-    for _ in range(grid_height):
-        grid.append(row)
+    grid = [[" " for _ in range(grid_width)] for _ in range(grid_height)]
     
     # Now let's start placing the nodes in the grid
     def dfs_draw_node(index, current_depth_in_tree, position_in_grid):
         if index >= len(heap):
             return
 
-        grid[current_depth_in_tree * 2][position_in_grid] = str(heap[index]) 
+        grid[current_depth_in_tree][position_in_grid] = str(heap[index]) 
+        # grid[current_depth_in_tree * 2][position_in_grid] = str(heap[index]) 
 
         # Get the left and right children positions
         left_child_position     = position_in_grid - 2 ** (height_of_tree - current_depth_in_tree - 2)
@@ -38,6 +36,6 @@ def draw_heap_on_grid(heap):
     # Return the grid
     return "\n".join("".join(row) for row in grid)
 
-heap = [1, 2, 3, 4, 5, 6]
+heap = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 print(draw_heap_on_grid(heap))
 
