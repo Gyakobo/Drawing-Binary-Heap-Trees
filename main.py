@@ -6,8 +6,8 @@ def draw_heap_on_grid(heap):
     height_of_tree = ceil(log2(len(heap) + 1))
 
     # Per a math formula let's get the grid dimensions
-    grid_height = (height_of_tree*2) - 1
     grid_width = ((2 ** height_of_tree) * 2) - 1
+    grid_height = (height_of_tree*2) - 1
 
     # Now let's create and fill the grid with empty cells
     # grid: grid_height x grid_width 

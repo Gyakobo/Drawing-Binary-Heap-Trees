@@ -41,6 +41,6 @@ def draw_heap_as_tree(heap):
     return "\n".join("".join(row) for row in grid)
 
 # Example heap
-heap = [1, 3, 6, 5, 9, 8]
+heap = [1, 2, 3, 4, 5, 6]
 tree_representation = draw_heap_as_tree(heap)
 print(tree_representation)
