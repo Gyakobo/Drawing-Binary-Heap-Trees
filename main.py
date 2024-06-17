@@ -28,12 +28,11 @@ def draw_heap_on_grid(heap):
 
         # Draw connections
         if 2 * index + 1 < len(heap):
-            for i in range(1, 2 ** (height - depth - 2)):
-                grid[depth * 2 + 1][pos - i] = "/"
+            for i in range(1, 2 ** (height_of_tree - current_depth_in_tree - 2)):
+                grid[current_depth_in_tree * 2 + 1][position_in_grid - i] = "/"
         if 2 * index + 2 < len(heap):
-            for i in range(1, 2 ** (height - depth - 2)):
-                grid[depth * 2 + 1][pos + i] = "\\"
-
+            for i in range(1, 2 ** (height_of_tree - current_depth_in_tree - 2)):
+                grid[current_depth_in_tree * 2 + 1][position_in_grid + i] = "\\"
 
         # Now the recursion
         # We shall rerun and recursively place the children
