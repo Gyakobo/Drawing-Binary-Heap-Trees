@@ -7,4 +7,6 @@ Author: [Andrew Gyakobo](https://github.com/Gyakobo)
 
 This project serves to display ordered and balanced heap binary trees in the stdout.
 
+## Introduction
 
+To start off, a `binary heap` is a complete binary tree that satisfies the heap property.
