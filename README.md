@@ -31,6 +31,10 @@ To start off, a `binary heap` is a complete binary tree that satisfies the heap 
 
 Binary heaps are often represented as arrays data structures because they can be easily managed using array indices:
 
+* For a node at index $i$:
+    * The left child is at index $2i + 1$
+    * The right child is at index $2i + 2$
+    * The parent is at index $\lfloor \frac{i-1}{2} \rfloor$
 
-
+This array-based representation is efficient in terms of memory and performance allowing for fast access and updates.
 
