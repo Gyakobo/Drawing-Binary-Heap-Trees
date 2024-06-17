@@ -45,6 +45,6 @@ def draw_heap_on_grid(heap):
     # Return the grid
     return "\n".join("".join(row) for row in grid)
 
-heap = [1, 2, 3, 4, 5, 6] * 2 
+heap = [1, 2, 3, 4, 5, 6] 
 print(draw_heap_on_grid(heap))
 
