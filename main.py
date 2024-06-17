@@ -1,6 +1,8 @@
 from math import ceil, log2
 
 def draw_heap_on_grid(heap):
+    if not heap:
+        return "Heap is empty"
 
     # Get the height of the tree
     height_of_tree = ceil(log2(len(heap) + 1))
