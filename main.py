@@ -34,6 +34,7 @@ def draw_heap_on_grid(heap):
             for i in range(1, 2 ** (height - depth - 2)):
                 grid[depth * 2 + 1][pos + i] = "\\"
 
+
         # Now the recursion
         # We shall rerun and recursively place the children
         dfs_draw_node(2 * index + 1, current_depth_in_tree + 1, left_child_position)
