@@ -8,7 +8,7 @@ def draw_heap_on_grid(heap):
     height_of_tree = ceil(log2(len(heap) + 1))
 
     # Per a math formula let's get the grid dimensions
-    grid_width = ((2 ** height_of_tree) * 2) - 1
+    grid_width = (2 ** height_of_tree) * 2 - 1
     grid_height = (height_of_tree*2) - 1
 
     # Now let's create and fill the grid with empty cells
@@ -28,10 +28,10 @@ def draw_heap_on_grid(heap):
 
         # Draw connections
         if 2 * index + 1 < len(heap):
-            for i in range(1, 2 ** (height_of_tree - current_depth_in_tree - 2)):
+            for i in range(1, 2 ** (height_of_tree - current_depth_in_tree - 2)+1):
                 grid[current_depth_in_tree * 2 + 1][position_in_grid - i] = "/"
         if 2 * index + 2 < len(heap):
-            for i in range(1, 2 ** (height_of_tree - current_depth_in_tree - 2)):
+            for i in range(1, 2 ** (height_of_tree - current_depth_in_tree - 2)+1):
                 grid[current_depth_in_tree * 2 + 1][position_in_grid + i] = "\\"
 
         # Now the recursion
@@ -45,6 +45,6 @@ def draw_heap_on_grid(heap):
     # Return the grid
     return "\n".join("".join(row) for row in grid)
 
-heap = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+heap = [1, 2, 3, 4, 5, 6] * 2 
 print(draw_heap_on_grid(heap))
 
