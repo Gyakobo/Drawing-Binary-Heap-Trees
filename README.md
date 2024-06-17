@@ -109,9 +109,11 @@ print(draw_heap_on_grid(heap))
 ## Results
 
 Thus having run [main.py](https://github.com/Gyakobo/Drawing-Binary-Heap-Trees/blob/main/main.py) the binary heap tree hypothetically should be reprented in the following form:
+
 <img src="./assets/diagram.png" />
 
-The program, however, will output the tree in this form:
+The program, however, will output the tree in the console in the next form:
+
 <img src="./assets/example.png" />
 
 ## License
