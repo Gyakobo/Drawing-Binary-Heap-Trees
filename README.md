@@ -114,7 +114,7 @@ Thus having run [main.py](https://github.com/Gyakobo/Drawing-Binary-Heap-Trees/b
 
 The program, however, will output the tree in the console in the next form:
 
-<img src="./assets/example.png" />
+<img src="./assets/console_example.png" />
 
 ## License
 MIT
