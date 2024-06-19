@@ -9,7 +9,7 @@ This project serves to display an ordered and balanced heap binary trees in the 
 
 ## Introduction
 
-To start off, a `binary heap` is only a complete binary tree that satisfies the heap property. There are two types of binary heaps:
+To start off, a `binary heap` is only a complete binary tree when it satisfies the heap property. There are two types of binary heaps:
 
 1. `Max-Heap:` In a max-heap, for any given node $i$:
     * The value $i$ is greater than or equal to the values of its children.
